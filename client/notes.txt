@@ -1,0 +1,32 @@
+creating free bible on android.
+
+endpoints
+https://bible-go-api.rkeplin.com/v1/books/1/chapters/1
+
+list all books
+https://bible-go-api.rkeplin.com/v1/books
+
+list all chapters 
+https://bible-go-api.rkeplin.com/v1/books/{book_id}/chapters
+
+list all verses under a chapter  of a single book
+https://bible-go-api.rkeplin.com/v1/books/{book_id}/chapters/{chapter_id}
+
+list books with their ids
+https://bible-go-api.rkeplin.com/v1/books/{book_id}/chapters/{chapter_id}
+
+list all genres
+https://bible-go-api.rkeplin.com/v1/genres
+
+list a genre 
+https://bible-go-api.rkeplin.com/v1/genres/{genre_id}
+
+to retrieve a specific translation bring ?translation={abbreviation}
+list all translations
+https://bible-go-api.rkeplin.com/v1/translations
+
+get content for a specific translations.
+https://bible-go-api.rkeplin.com/v1/books/{book_id}/chapters/{chapter_id}/{verse_id}?translation=ASV
+
+get translation for a specific chapter 
+https://bible-go-api.rkeplin.com/v1/books/1/chapters/1?translation=KJV
