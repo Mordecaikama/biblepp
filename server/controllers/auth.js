@@ -1,7 +1,7 @@
-require('dotenv').config()
 const axios = require('axios')
+const bible_api = require('../config')
 
-axios.defaults.baseURL = process.env.bible_api
+axios.defaults.baseURL = bible_api
 
 exports.allBooks = async (req, res) => {
   const { data } = await axios.get('/books')

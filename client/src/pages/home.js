@@ -19,6 +19,7 @@ function Home() {
   const [translation, setTranslation] = useState('KJV')
   const { isAuthenticated, AddTolocalStorage } = useContext(Context)
   const [menuShow, setMenuShow] = useState(false)
+  const [closemenu, setClosemenu] = useState(false)
   // console.log(book && book)
 
   useEffect(() => {
@@ -195,7 +196,7 @@ function Home() {
       {/* <div>{appdata && JSON.stringify(appdata)}</div> */}
 
       <div className='container main__container'>
-        <aside className={`${menuShow && 'menushow'}`}>
+        <aside className={`${menuShow ? 'menushow' : 'close'}`}>
           <div className='top'>
             <div className='logo'>
               <h4>Holy Bible</h4>

@@ -503,13 +503,17 @@ nav .middle.top select:focus + .focus {
     position: fixed;
     top: 4rem;
     left: 0;
-    width: 10rem;
+    width: 12rem;
     display: block;
-    background: rgb(230, 187, 187);
+    background: var(--color-background);
     z-index: 2;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    animation: animateNavForwardsItems 400ms ease forwards;
+    animation: animateNavForwardsItems 400ms ease-out forwards;
     /* opacity: 0; */
+  }
+
+  .main__container .close {
+    animation: animateNavBackwardsItems 400ms ease-in forwards;
   }
 
   @keyframes animateNavForwardsItems {
