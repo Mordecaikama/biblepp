@@ -20,7 +20,7 @@ app.use(cors({ origin: true, credentials: true }))
 
 app.use(morgan('dev'))
 // route middlewares
-app.use('/', authRoutes)
+app.use('/api', authRoutes)
 
 app.use((err, req, res, next) => {
   // console.log(err)
